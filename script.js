@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const attemptsCounter = document.getElementById('attemptsCounter');
   const container = document.querySelector('.container');
   
-  let attempts = 5;
-  const correctAnswer = '1234'; // Your original secret key
+  let attempts = 10;
+  const correctAnswer = 'ILLUSION';
   
   // Ensure proper viewport height on mobile
   const setViewHeight = () => {
