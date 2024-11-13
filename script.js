@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.container');
   
   let attempts = 10;
-  const correctAnswer = 'ILLUSION';
+  const secretKey = 'ILLUSION';
   
   // Ensure proper viewport height on mobile
   const setViewHeight = () => {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const answer = input.value.trim();
       
-      if (answer === correctAnswer) {
+      if (answer === secretKey) {
           window.location.href = 'success.html';
       } else {
           attempts--;
